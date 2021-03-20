@@ -90,7 +90,7 @@
     padding: 0;
     margin: 0;
     transition: 0.5s cubic-bezier(.17,.67,.83,.67);
-    z-index: 6;
+    z-index: 7;
 }
 
 #icono li:nth-child(1){
@@ -286,7 +286,7 @@
     transition: 0.8s cubic-bezier(0,.45,.83,.67);
     transform: translateX(-100vw);
     font-family: 'abril-fatface';
-    z-index: 5;
+    z-index: 6;
 }
 
 
