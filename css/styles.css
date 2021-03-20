@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+.menu{
+    position: absolute;
+    top: 5%;
+}
+
+
+.btn__menu{
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.btn__menu span{
+    display: block;
+    width: 25px;
+    height: 4px;
+    background: #fff;
+    margin: 5px;
+}
+
+.btn__menu span:nth-last-child(3){
+    transition: all 150ms;
+    transition-delay: 0.2s;
+}
+
+.btn__menu span:nth-last-child(2){
+    transition: all 150ms;
+    transition-delay: 0.3s;
+}
+
+.btn__menu span:nth-last-child(1){
+    transition: all 150ms;
+    transition-delay: 0.4s;
+}
+
+
+.btn__menu:hover span:nth-last-child(3){
+    width: 30px;
+    
+}
+.btn__menu:hover span:nth-last-child(2){
+    width: 30px;
+    
+}
+.btn__menu:hover span:nth-last-child(1){
+    width: 30px;
+    
+}
+
+#icono{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+#icono::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    z-index: 6;
+}
+
+#icono .change{
+    background: black;
+}
+
+#icono li{
+    list-style: none;
+    background: #fff;
+    position: absolute;
+    transform-origin: 0 0;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s cubic-bezier(.17,.67,.83,.67);
+    z-index: 6;
+}
+
+#icono li:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 2px;
+}
+
+#icono li:nth-child(2){
+    top: 0;
+    left: 5%;
+    width: 100%;
+    height: 2px;
+    transform: rotate(90deg);
+}
+
+#icono li:nth-child(3){
+    top: -1%;
+    left: 5%;
+    width: 134%;
+    height: 2px;
+    transform: rotate(45deg);
+}
+
+#icono li:nth-child(4){
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    height: 2px;
+}
+
+
+#icono li:nth-child(5){
+    bottom: 0;
+    left: 26%;
+    width: 16%;
+    height: 2px;
+    transform: rotate(-33deg);
+}
+
+#icono li:nth-child(6){
+    bottom: 10%;
+    left: 40%;
+    width: 2px;
+    height: 20%;
+}
+
+#icono li:nth-child(7){
+    bottom: 0;
+    left: 25%;
+    width: 2px;
+    height: 45%;
+   
+}
+
+#icono li:nth-child(8){
+    transform: rotate(46deg);
+    top: 0;
+    left: 34%;
+    width: 60%;
+    height: 2px;
+  
+}
+
+#icono li:nth-child(9){
+    transform: rotate(45deg);
+    top: 56%;
+    left: 30%;
+    width: 58%;
+    height: 2px;
+}
+
+
+#icono li:nth-child(10){
+    bottom: 0;
+    left: 67%;
+    width: 32%;
+    height: 2px;
+   
+}
+
+#icono li:nth-child(11){
+    bottom: 0;
+    left: 96%;
+    width: 2px;
+    height: 100%;
+
+}
+
+#icono li:nth-child(12){
+    bottom: 53%;
+    left: 73%;
+    width: 2px;
+    height: 44%;
+   
+}
+
+#icono li:nth-child(13){
+    top: 0;
+    left: 73%;
+    width: 25%;
+    height: 2px;
+}
+
+#icono li:nth-child(14){
+    top: 0;
+    right: 27%;
+    width: 18%;
+    height: 2px;
+    transform: rotate(-31deg);
+    transform-origin: 100% 0;
+}
+
+#icono li:nth-child(15){
+    top: 9%;
+    right: 37%;
+    width: 2px;
+    height: 20%;
+}
+
+
+#icono #relleno{
+    width: 11px;
+    left: 0;
+    height: 0px;
+    background: #fff;
+    bottom: 2%;
+    border-radius: 0;
+    transition: all 300ms;
+    transition-delay: 0.2s;
+}
+
+#icono #relleno2{
+    top: 0;
+    left: 2%;
+    width: 9px;
+    height: 0px;
+    background: #fff;
+    border-radius: 0;
+    transform: rotate(-45deg) translate(-9px);
+    transform-origin: 0 0;
+    transition: all 300ms;
+    transition-delay: 0.3s;
+}
+
+#icono #relleno3{
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 0px;
+    background: #fff;
+    border-radius: 0;
+    transform: rotate(-44deg) translate(1px);
+    transition: all 300ms;
+    transition-delay: 0.4s;
+}
+
+#icono #relleno4{
+    bottom: 0;
+    right: 0;
+    width: 9px;
+    height: 0px;
+    border-radius: 0;
+    transition: all 300ms;
+    transition-delay: 0.5s;
+}
+
+
+#icono:hover #relleno{
+    height: 27px;
+}
+
+#icono:hover #relleno2{
+    height: 55px;
+}
+
+#icono:hover #relleno3{
+    height: 50px;
+}
+
+#icono:hover #relleno4{
+    height: 36px;
+}
+
+
+
+.menu__toggle{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    position: absolute;
+    transition: 0.8s cubic-bezier(0,.45,.83,.67);
+    transform: translateX(-100vw);
+    font-family: 'abril-fatface';
+    z-index: 5;
+}
+
+
+.menu__toggle #links{
+    position: absolute;
+    top: 20%;
+    width: 80%;
+    margin: 0 0 0 15%;
+}
+
+.menu__toggle #links li{
+    list-style: none;
+    padding: 5px;
+    position: relative;
+}
+
+.menu__toggle #links li a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #333;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.menu__toggle #links li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    bottom:0;
+    transition: 0.3s cubic-bezier(.8,.84,.29,.73);
+    transform-origin: 0 0;
+}
+
+.menu__toggle #links li a:hover::before{
+    width: 20%;
+}
+
+.menu__toggle #links .links1 li a::after{
+    content: '01';
+    position: absolute;
+    top: 0.7em;
+    left: -2em;
+    font-size: 0.3em;
+    transform: rotate(-90deg);
+    backface-visibility: hidden;
+}
+
+.menu__toggle #links .links2 li a::after{
+    content: '02';
+    position: absolute;
+    top: 0.7em;
+    left: -2em;
+    font-size: 0.3em;
+    transform: rotate(-90deg);
+    backface-visibility: hidden;
+}
+
+
+
+.menu__toggle .lorem{
+    position: absolute;
+    bottom: 15%;
+    left: 16%;
+    line-height: 2em;
+    font-weight: 700;
+}
+
+.menu__toggle .lorem p::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 2px;
+    background: black;
+    margin-top: 11%;
+    margin-left: -10%;
+}
+
+#close{
+    position: absolute;
+    top:50%;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#close span{
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: black;
+    transform-origin: 4px;
+    margin: 15px 10px;
+    position: relative;
+}
+
+#close span:nth-child(1){
+    position: absolute;
+    top:0;
+    transform: rotate(40deg);
+    transition: 0.4s cubic-bezier(.69,.43,.67,.43);
+}
+
+#close span:nth-child(2){
+    position: absolute;
+    top: 17px;
+    transform: rotate(-40deg);
+    transition: 0.4s cubic-bezier(.69,.43,.67,.43);
+}
+
+#close:hover span:nth-child(1){
+    width: 0;
+}
+#close:hover span:nth-child(2){
+    width: 0;
+}
+
+#close #span1{
+    position: absolute;
+    top:0;
+    transform: rotate(40deg);
+    transition: 0.4s cubic-bezier(.69,.43,.67,.43);
+    background: #7fbfd2;
+    width: 0;
+}
+
+#close #span2{
+    position: absolute;
+    top: 17px;
+    transform: rotate(-40deg);
+    transition: 0.4s cubic-bezier(.69,.43,.67,.43);
+    background: #7fbfd2;
+    width: 0;
+}
+
+#close:hover #span1{
+    width: 35px;
+}
+
+#close:hover #span2{
+    width: 35px;
+}
+
+
+.menu_active{
+    transform: translateX(0);
+}
+
+
+/*.loader{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    top: 0;
+    right: 0;
+    transition: 0.5s cubic-bezier(0.52,0.01,0.16,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+   
+}
+
+.loader .hope span{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid;
+    position: relative;
+    border-color: transparent;
+    border-right-color: #333;
+    border-left-color: #333;
+    animation: animate 2s linear infinite;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.hope{
+    width: 50%;
+    height: 50%;
+    background: red;
+    transition: 0.5s cubic-bezier(0.52,0.01,0.16,1);
+}*/
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner .banner__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*banner 1*/
+.banner .banner__content .banner1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    background-image: url(../img/nike.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner__content .banner1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    
+}
+
+.banner .banner__content .banner1 .banner__text{
+    position: absolute;
+    top: 17%;
+    margin: 0px 40px;
+    padding-bottom: 20px;
+    max-width: 300px;
+}
+
+.banner .banner__content .banner1 .banner__text h2{
+    font-size: 3em;
+    color: #fff;
+    padding: 0px 0px 50px 0px;
+} 
+
+.banner .banner__content .banner1 .banner__text a{
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+    transition: 0.5s cubic-bezier(0.52,0.01,0.16,1);
+    
+}
+
+
+.banner .banner__content .banner1 .banner__text a::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 2px;
+    background: #333;
+    left: 0;
+    top: 49%;
+    transition: 0.4s cubic-bezier(0.52,0.01,0.16,1);
+}
+
+.banner .banner__content .banner1 .banner__text a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #333;
+    right: 0;
+    top: 49%;
+    transition: 0.4s cubic-bezier(0.52,0.01,0.16,1);
+}
+
+.banner .banner__content .banner1 .banner__text a:hover::before{
+    width: 10px;
+}
+
+.banner .banner__content .banner1 .banner__text a:hover::after{
+    width: 10px;
+}
+
+
+.shoes{
+    position: absolute;
+    right: 0;
+    animation: 1s faded forwards;
+    transition: 2s cubic-bezier(0.52,0.01,0.16,1);
+    display: none;
+    bottom: 0;
+    right: 5%;
+    opacity: 0;
+
+}
+
+.shoes img{
+    width: 350px;
+    object-fit: cover;
+    transition: 0.5s cubic-bezier(0.52,0.01,0.16,1);
+ 
+}
+
+.shoes img:hover{
+    transform: translateX(-30px) scale(1.1);
+}
+
+@keyframes faded{
+    100%{
+        opacity: 1;
+        bottom: 10%;
+    }
+}
+
+
+.banner .banner__content div.active{
+    display: block;
+}
+
+
+.controls{
+    position: absolute;
+    bottom: 8%;
+    width: 80px;
+    display: flex;
+    left: 40%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.3);
+    z-index: 5;
+}
+
+.controls li{
+    position: relative;
+    width: 3px;
+    height: 20px;
+    background: #fff;
+    z-index: 3;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0.5;
+    animation: 1.8s li__fade infinite;
+}
+
+@keyframes li__fade{
+    100%{
+        opacity: 1;
+    }
+}
+
+.controls li:nth-child(1)::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: red;
+    left: -7px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.controls li:nth-child(2)::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: red;
+    right: -7px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.controls li:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(132deg);
+    left: -4px;
+    top: 10px;
+    animation: 2s upArrow linear infinite;
+    opacity: 0;
+}
+
+.controls li:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+    left: -4px;
+    animation: 2s DownArrow linear infinite;
+    bottom: 13px;
+    opacity: 0;
+}
+
+@keyframes upArrow{
+    50%{
+        top: 0;
+        opacity: 1;
+    }
+    100%{
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes DownArrow{
+    50%{
+        bottom: 0;
+        opacity: 1;
+    }
+    100%{
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes animate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media(min-width: 500px){
+    .menu__toggle #links{
+        display: flex;
+    }
+    .links2{
+        margin: 0 0 0 15%;
+    }
+    .menu__toggle .lorem{
+        bottom: 30%;
+    }
+    .banner .banner__content .banner1 .banner__text{
+        top: 25%;
+        width:  80%;
+    }
+    .controls{
+        left: 43%;
+    }
+}
+
+@media(min-width: 768px){
+    .links2{
+        margin: 0 0 0 30%;
+    }
+    .banner .banner__content .banner1 .banner__text{
+        top: 25%;
+        max-width: 400px;
+    } 
+    .controls{
+        left: 46%;
+    }
+    .shoes{
+        display: block;
+        
+    }
+    .controls{
+        bottom: 2%;
+    }
+}
+
+@media(min-width: 900px){
+    .menu_active{
+        width: 60%;   
+    }
+    .menu__toggle #links{
+        font-size: 1.2em
+    }
+    #close{
+        left: 80%;
+        top: 55%;
+    }
+    .links2{
+        margin: 0 0 0 15%;
+    }
+    .banner .banner__content .banner1 .banner__text{
+        top: 30%;
+    }
+    .shoes img{
+        width: 450px;
+    }
+}
+
+@media(min-width: 1024px){
+    .banner .banner__content .banner1 .banner__text {
+        max-width: 500px;
+    }
+    .banner .banner__content .banner1 .banner__text h2{
+        font-size: 3.2em;
+    }
+    .shoes{
+        right: 5%;
+    }
+    .shoes img{
+        
+    }
+}
+
+@media(min-width: 1200px){
+    .menu_active{
+        width: 60%;   
+    }
+    .menu__toggle #links{
+        font-size: 1.4em
+    }
+    #close{
+        left: 80%;
+        top: 55%;
+    }
+    .banner .banner__content .banner1 .banner__text {
+        line-height: 4em;
+    }
+    .shoes img{
+        
+    }
+}
+
+
+
+
+
+

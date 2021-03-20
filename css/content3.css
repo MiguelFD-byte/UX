@@ -1,0 +1,253 @@
+.banner .banner__content .banner3{
+    background: #5783c8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow: hidden;
+}
+
+
+.main__content{
+    position: absolute;
+    top: 17%;
+    left: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    
+
+}
+
+.main__content .content1{
+    margin: 0px 40px;
+    max-width: 350px;
+    transition: 0.5s cubic-bezier(.17,.67,.83,.67);
+    opacity: 1;
+}
+
+.main__content .content1 p{
+    margin: 20px 0px 0px 0px;
+}
+
+.main__content .content2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0px 40px;
+    transform: translateX(250px);
+    opacity: 0;
+    transition: 0.5s cubic-bezier(.17,.67,.83,.67);
+    max-width: 280px;
+}
+
+.main__content .content2 p{
+    margin: 20px 0px 0px 0px;
+}
+
+
+.control{
+    position: absolute;
+    right: 5%;
+    z-index: 1;
+    padding: 10px;
+    top: 5%;
+    cursor: pointer;
+}
+
+.control a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+.control a::before{
+    content: '+';
+    position: absolute;
+    left: -5%;
+    top: 30%;
+    transition: 0.1s;
+    font-size: 1.3em;
+}
+
+.control:hover a::before{
+    transform: rotate(90deg);
+}
+
+/*activadores*/
+.main__content .active__content1{
+    transform: translateX(-300px);
+    opacity: 0;
+}
+
+.main__content .active__content2{
+    transform: translateX(0);
+    opacity: 1;
+    width: 100%;
+}
+
+/*shoes 1*/
+
+.main_shoes .shoes1{
+    max-width: 300px;
+    margin: 0px 0px 0px 100px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.main_shoes .shoes1  h2{
+    opacity: 0;
+    transition: 1s;
+}
+
+.main_shoes .shoes1 .txt__shoes{
+    transform: translateX(50px);
+    transition: 0.5s;
+    opacity: 0;
+    margin: 15px 0px 0px 0px;
+}
+
+
+.main_shoes .shoes1 img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    backface-visibility: hidden;
+    object-fit: cover;
+    transform: rotate(-40deg);
+    transition: 0.5s;
+}
+
+.main_shoes .shoes1:hover h2{
+    opacity: 1;
+}
+
+.main_shoes .shoes1:hover .txt__shoes{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.main_shoes .shoes1:hover img{
+    width: 300px;
+    height: 150px;
+    transform: rotate(0) translateY(30px);
+}
+
+/*shoes 2*/
+.main_shoes{
+    width: 100%;
+    display: none;
+}
+.main_shoes .shoes2{
+    max-width: 300px;
+    margin: 0px 0px 0px 100px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 15%;
+}
+
+.main_shoes .shoes2  h2{
+    opacity: 0;
+    transition: 1s;
+}
+
+.main_shoes .shoes2 .txt__shoes{
+    transform: translateX(50px);
+    transition: 0.5s;
+    opacity: 0;
+    margin: 15px 0px 0px 0px;
+}
+
+
+.main_shoes .shoes2 img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    backface-visibility: hidden;
+    object-fit: cover;
+    transform: rotate(-40deg);
+    transition: 0.5s;
+}
+
+.main_shoes .shoes2:hover h2{
+    opacity: 1;
+}
+
+.main_shoes .shoes2:hover .txt__shoes{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.main_shoes .shoes2:hover img{
+    width: 300px;
+    height: 150px;
+    transform: rotate(0) translateY(30px);
+}
+
+
+
+@media (min-width: 768px){
+    .banner .banner__content .banner3 .main__content{
+        display: flex;
+    }
+    .main__content .content1{
+        max-width: 280px;
+        margin: 0px 0px 0px 50px;
+    }
+    .main_shoes{
+        display: block;
+    }
+    
+}
+
+@media (min-width: 900px){
+    .main__content .content1{
+        margin: 0px 0px 0px 150px;
+    }
+    .main__content .active__content2{
+        transform: translateX(110px);
+    }
+    .main__content .active__content1{
+    transform: translateX(-100px);
+    opacity: 0;
+    }
+    
+}
+
+@media (min-width:1024px){
+    .main_shoes .shoes1{
+        margin: 0px 0px 0px 170px;
+    }
+    .main_shoes .shoes2{
+        margin: 0px 0px 0px 170px;
+    }
+    
+}
+
+@media (min-width:1200px){
+    .main__content .content1{
+        max-width: 280px;
+        margin: 0px 0px 0px 250px;
+    }
+    
+    .main__content .active__content2{
+        transform: translateX(210px);
+        opacity: 1;
+        width: 100%;
+    }
+    .main_shoes .shoes1{
+        margin: 0px 0px 0px 250px;
+    }
+    .main_shoes .shoes2{
+        margin: 0px 0px 0px 250px;
+    }
+    
+}
+
+
